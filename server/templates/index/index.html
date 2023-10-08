@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/font/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="static/index.css" type="text/css">
+</head>
+<!--<style>-->
+<!--    @font-face {-->
+<!--        font-family: "iconfont"; /* Project id 4217188 */-->
+<!--        src: url('/static/font/iconfont.ttf?t=1692431234075') format('truetype');-->
+<!--    }-->
+<!--</style>-->
+<body style="overflow: hidden">
+    <div id="box">
+        <main id="main-video">
+            <div id="video-region">
+                <video autoplay controls id="video"></video>
+                <canvas id="amplify-canvas" width="500" height="500"></canvas>
+            </div>
+            <footer id="main-video-setting">
+            </footer>
+        </main>
+        <main id="other-video">
+        </main>
+    </div>
+    <dialog id="dialog">
+        <div id="dialog-box">
+        </div>
+    </dialog>
+</body>
+</html>
+<script src="/static/js/md5.min.js"></script>
+<script src="/static/dataRenderDOM.js"></script>
+<script src="/static/index.js?time=2222"></script>
+
+<script>
+    async function startRecording() {
+       let audio = await createMeadiaStream.meadiaInit();
+
+    }
+    // function capture() {
+    //     ShareWindow.startCapture();
+    // }
+</script>
+<script>
+    window.onload = ()=>{
+        document.querySelector("#dialog").showModal();
+
+        //test
+        // const canvas  = document.getElementById("23333455");
+        // if(canvas){
+        //     const cw = canvas.width;    // 获取元素宽度
+        //     const ch = canvas.height;
+        //     const ctx = canvas.getContext("2d");
+        //     ctx.clearRect(0, 0, cw, ch);
+        //     const image = new Image(300, 300);
+        //     image.src = "/static/image/close_video.png"
+        //     image.onload = function () {
+        //         ctx.drawImage(image,0,0,cw,ch)
+        //     }
+        //
+        // }
+        // renderParticopantMemu.set(renderParticopantMemu.data.menuList,"23333455",{
+        //     isMute:false,//是否静音
+        //     isCloseVideo:false,//是否关闭视频
+        //     isAmplify:false,//是否放大
+        // })
+    }
+
+
+</script>
